@@ -18,10 +18,13 @@
 .home__social-icon {
     font-size: 1.25rem;
     color: grey;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home__social-icon:hover {
     color: var(--title-color-dark);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
 
 .home__title {

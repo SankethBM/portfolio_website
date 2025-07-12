@@ -1,0 +1,238 @@
+/* ========== Root palette ========== */
+:root {
+  --clr-bg: #ffffff;
+  --clr-text: #1f2937;
+  --clr-muted: #6b7280;
+  --clr-primary: #000;
+  --clr-primary-dark: #2563eb;
+  --radius-lg: 1.5rem;
+  --shadow-card: rgba(0, 0, 0, 0.18);
+}
+
+/* ========== Section layout ========== */
+.projects {
+  background: var(--clr-bg);
+  padding: 5rem 0;
+}
+
+.projects__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.projects__heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.projects__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 0.75rem;
+}
+
+.projects__divider {
+  width: 5rem;
+  height: 0.25rem;
+  background: var(--clr-primary);
+  margin: 0 auto 1.5rem;
+  border-radius: 999px;
+}
+
+.projects__subtitle {
+  max-width: 42rem;
+  margin: 0 auto;
+  color: var(--clr-muted);
+  line-height: 1.6;
+}
+
+/* ========== Grid ========== */
+.projects__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ========== Card ========== */
+.card {
+  background: #f3f4f6;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-10px); 
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15); 
+}
+
+.card__image {
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.card__image img {
+  max-width: 13rem;
+  max-height: 13rem;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 1.5rem;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card__subtitle {
+  color: var(--clr-muted);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ========== Buttons ========== */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.btn--primary {
+  background: var(--text-color);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--title-color);
+}
+
+/* toggle wrapper */
+.projects__toggle {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* ========== Modal ========== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modal__dialog {
+  background: var(--clr-bg);
+  padding: 2.5rem 2rem;
+  width: 90%;
+  max-width: 680px;
+  border-radius: var(--radius-lg);
+  position: relative;
+  transform: scale(0.9);
+  opacity: 0;
+  animation: popIn 0.25s ease forwards;
+}
+
+@keyframes popIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.2rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--clr-text);
+}
+
+.modal__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-text);
+  margin-bottom: 1rem;
+}
+
+.modal__description {
+  text-align: center;
+  color: var(--clr-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.modal__image {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+}
+
+/* ========== Responsive modal image ========== */
+@media (max-width: 576px) {
+  .modal__image {
+    max-height: 15rem;
+  }
+}
+
+/* ========== Dark mode support (optional) ========== */
+[data-theme="dark"] {
+  --clr-bg: #0f1117;
+  --clr-text: #f3f4f6;
+  --clr-muted: #9ca3af;
+  --clr-primary: #2563eb;
+  --clr-primary-dark: #1d4ed8;
+  --shadow-card: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .card {
+  background: #1a1c23;
+}
+
+[data-theme="dark"] .projects {
+  background: var(--clr-bg);
+}

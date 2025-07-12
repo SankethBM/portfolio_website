@@ -58,11 +58,11 @@ const Data = () => {
             <h3 className="home__subtitle">Full Stack Developer</h3>
 
             <p className="home__description">
-                Hello , I'm currently studying in NIE First Grade College in Mysore . I'm an Full Stack Web Developer
+                Hello , I'm currently pursuing my Master Degree at MIT in Mysore . I'm an <span style={{ fontWeight: 'bold' }} >Full Stack Web Developer</span > and a <span style={{ fontWeight: 'bold' }}>Freelancer</span>
             </p>
 
-            <a href="#contact" className="button button-flex">
-                Hire Me !
+            <a href="tel:+916364103044" className="button button-flex">
+                Contact Me !
                 <svg
                     class="button__icon"
                     xmlns="http://www.w3.org/2000/svg"

@@ -41,10 +41,13 @@
     padding: 0.4rem;
     border-radius: 0.5rem;
     display: inline-flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .footer__social-link:hover {
     background-color: var(--title-color-dark);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
 
 .footer__copy {
@@ -53,6 +56,42 @@
     color: var(--title-color);
     text-align: center;
     font-size: var(--smaller-font-size);
+}
+
+.footer__heart {
+    color: #e11d48;
+    /* rose-600 */
+    display: inline-block;
+    animation: beat 1.2s infinite;
+}
+
+.footer__link {
+    color: black;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+@keyframes beat {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transform: scale(1);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.2);
+    }
 }
 
 @media screen and (max-width: 992px) {
