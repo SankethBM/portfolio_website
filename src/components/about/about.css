@@ -35,6 +35,12 @@
     font-weight: var(--font-medium);
 }
 
+.myName{
+    font-size: 1.2rem;
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}
+
 .about__subtitle {
     font-size: var(--tiny-font-size);
 }
