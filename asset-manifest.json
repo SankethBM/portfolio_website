@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio_website/static/css/main.619f1546.css",
+    "main.js": "/portfolio_website/static/js/main.3b646e5f.js",
+    "static/js/787.8a7daafc.chunk.js": "/portfolio_website/static/js/787.8a7daafc.chunk.js",
+    "static/media/nadb_image.svg": "/portfolio_website/static/media/nadb_image.32dc7670176a419e4c628fdb99fef91e.svg",
+    "static/media/AiService.gif": "/portfolio_website/static/media/AiService.d2772c7c2969f470dbe6.gif",
+    "static/media/E-Commerce_project_img.png": "/portfolio_website/static/media/E-Commerce_project_img.e3b33baa55e415a26e99.png",
+    "static/media/Mobile_app_demo_img.svg": "/portfolio_website/static/media/Mobile_app_demo_img.70c01d14ea20f05767ba712ba99774b3.svg",
+    "static/media/blogWebsite.svg": "/portfolio_website/static/media/blogWebsite.00f4affb59a948b3395d65c4d6b837a2.svg",
+    "static/media/Newspaper.gif": "/portfolio_website/static/media/Newspaper.5d29860b2cfcefe6d51a.gif",
+    "static/media/ai_project.svg": "/portfolio_website/static/media/ai_project.6687819ca03a69627acc2fe15c771d36.svg",
+    "static/media/FingerprintReader.gif": "/portfolio_website/static/media/FingerprintReader.d39cf3d390497208901b.gif",
+    "static/media/Online_Shopping.gif": "/portfolio_website/static/media/Online_Shopping.d77faf91cf99778125db.gif",
+    "static/media/sanketh.pdf": "/portfolio_website/static/media/sanketh.a6103b0ac8ea02625fa7.pdf",
+    "static/media/profile.jpeg": "/portfolio_website/static/media/profile.612c6764c7f456d718c2.jpeg",
+    "static/media/Mobile_Development.gif": "/portfolio_website/static/media/Mobile_Development.bb052a04e69580c0f904.gif",
+    "index.html": "/portfolio_website/index.html",
+    "main.619f1546.css.map": "/portfolio_website/static/css/main.619f1546.css.map",
+    "main.3b646e5f.js.map": "/portfolio_website/static/js/main.3b646e5f.js.map",
+    "787.8a7daafc.chunk.js.map": "/portfolio_website/static/js/787.8a7daafc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.619f1546.css",
+    "static/js/main.3b646e5f.js"
+  ]
+}
